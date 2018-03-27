@@ -1,0 +1,192 @@
+
+body{
+   padding-top: 10px;
+}
+
+#principal{
+    width: 1000px;
+     margin:0 auto;
+}
+
+
+
+#cabecera{
+   height: 170px;
+}
+
+#cabeceraPrincipal{
+   height: 260px;
+}
+
+#menu{
+ height: 30px;
+ border: 1px solid #CCC;
+ margin: 456px;
+}
+
+#columnaizq{
+    width: 980px;
+    margin: 19px;
+    position:absolute;
+    top: 180px;
+    left: 170px;
+
+}
+
+#columnaizq ul{                          /*propiedad para desaparecer puntos de lista*/
+     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   background-color: #f0f3f4 ;
+
+}
+
+li {
+    float: left;
+}
+
+#columnaizq  li a{
+   display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight:bold;
+}
+
+#columnaizq li a:hover{
+
+}
+
+
+#columnaizq ul li a{
+    text-decoration:none;     /*quita subrayado de hipervinculo*/
+
+}
+
+
+#btnprincipal{
+  display: inline-block;
+    border-radius: 10px;
+    background-color: #001c56;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    width: 287px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 20px;
+ }
+
+#columnader{
+    width: 700px;
+
+    margin: 10px;
+    float: left;
+    height: 500px;
+    position:absolute;
+    top: 240px;
+    left: 450px;
+
+}
+
+.clear{
+    clear:both;              /*esta propiedad no permite que*/
+                             /*las columnas se salgan del contenedor*/
+}
+
+#pie{
+    height: 90px;
+     margin: 10px;
+ 	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 11px;
+
+}
+
+#loginForm{
+	margin: auto;
+	width: 400px;
+	padding-top: 10px;
+	padding-bottom: 40px;
+}
+
+#infoUsuario{
+	font-family: 'Roboto',Arial,sans-serif !important;
+        font-size: 12px !important;
+	height: 20px;
+	border-bottom: 1px solid #CCC;
+        font-weight: bold;
+
+
+}
+
+#infoUsuario_nombre{
+	float: left;
+
+
+}
+#infoUsuario_rol{
+	float: right;
+}
+
+.alertaError{
+	color: #E30913;
+
+    box-shadow:inset 0px 0px 2px 0px rgba(255, 0, 0, 0.75);
+}
+
+
+/* estilo para tabla carrito*/
+
+.TableDatos {
+    border: #265a88 0px solid;
+    font-size: 14px !important;
+}
+.TableDatos table{
+
+}
+.TableDatos tbody{
+}
+.TableDatos tr{
+    border: #265a88 1px solid;;
+    height: 33px;
+}
+.TableDatos td{
+    border: #265a88 1px solid;;
+}
+
+.textoTitulo{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.fondoTextoTitulo{
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    background: lightsteelblue; border-collapse: separate
+}
+
+#OrderPackages{
+
+  width: 200px;
+
+}
+
+input[type="radio"] {
+
+     vertical-align: baseline;
+
+}
+
+textarea{
+  height: 8em;
+  width: 50em;
+
+
+}

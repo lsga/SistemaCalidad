@@ -1,0 +1,177 @@
+<br>
+<?php
+
+require("../util/config.php");
+
+
+echo ' <ul>
+        <li><a class="active" href="../views/ministerioEducacion.php">Home</a></li>
+        <li id="ver_proyecto"><a href="#">Ver resumen de autoevaluación</a></li>
+        <li id="res_final"><a href="#">Informe final</a></li>
+        <li id="opcion4" style="float:right;"><a href="'.$path.'/logout.php">Cerrar</a></li>
+        <li id="atras" style="float:right;"><a href="../views/principal.php">Atras</a></li>
+
+
+  </ul>';
+
+?>
+
+
+
+
+<?php
+
+require_once dirname(dirname(__FILE__)).'/controller/componente_controller.php';
+
+$tablacomponente ='';
+
+//print_r($datos1);
+foreach ($datoscomponente as $key => $value) {
+ $tablacomponente .= "   <tr>
+
+                 <td>".$datoscomponente[$key]['idComponente']."</td>
+                 <td>".$datoscomponente[$key]['nombreComponente']."</td>
+                </td>
+            </tr> ";
+
+
+}
+
+
+require_once dirname(dirname(__FILE__)).'/controller/proceso_controller.php';
+
+?>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<div id="OrderPackages">
+    <table id="tableSearchResults" class="table table-hover  table-striped table-condensed" >
+        <thead>
+            <tr>
+            </tr>
+        </thead>
+        <tbody>
+
+             <BR>
+
+
+            <tr id="package1" class="accordion-toggle" data-toggle="collapse" data-parent="#OrderPackages" data-target=".packageDetails1">
+
+             <th onclick="mostrar_proceso(1,'<?php echo $datoscomponente[0]['nombreComponente'];?>')" ><?php echo utf8_encode($datoscomponente[0]['nombreComponente']);?>  </th>
+                <th></th>
+             </tr>
+
+            <tr>
+                <td colspan="3" class="hiddenRow">
+                    <div class="accordion-body collapse packageDetails1" id="accordion1" >
+                        <table>
+                            <tr>
+
+                            <div id="idComponente1"> </div>
+
+
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+
+            </tr>
+
+           <tr id="package2" class="accordion-toggle" data-toggle="collapse" data-parent="#OrderPackages" data-target=".packageDetails2">
+                 <th onclick="mostrar_proceso(2,'<?php echo $datoscomponente[1]['nombreComponente'];?>')" ><?php echo utf8_encode($datoscomponente[1]['nombreComponente']);?>  </th>
+
+                <th></th>
+
+
+                </td>
+            </tr>
+              <tr>
+                <td colspan="3" class="hiddenRow">
+                    <div class="accordion-body collapse packageDetails2" id="accordion2">
+                        <table>
+                            <tr>
+
+                            <div id="idComponente2"> </div>
+
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+
+               <tr id="package3" class="accordion-toggle" data-toggle="collapse" data-parent="#OrderPackages" data-target=".packageDetails3">
+                <th  onclick="mostrar_proceso(3,'<?php echo $datoscomponente[2]['nombreComponente'];?>')"><?php echo utf8_encode($datoscomponente[2]['nombreComponente']);?></th>
+
+                <th></th>
+
+            </tr>
+
+              <tr>
+                <td colspan="3" class="hiddenRow">
+                    <div class="accordion-body collapse packageDetails3" id="accordion3">
+                        <table>
+                            <tr>
+
+                              <div id="idComponente3"> </div>
+
+
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+
+            <tr id="package4" class="accordion-toggle" data-toggle="collapse" data-parent="#OrderPackages" data-target=".packageDetails4">
+                <th onclick="mostrar_proceso(4,'<?php echo $datoscomponente[3]['nombreComponente'];?>')" ><?php echo utf8_encode($datoscomponente[3]['nombreComponente']);?></th>
+
+                <th ></th>
+
+            </tr>
+
+              <tr>
+                <td colspan="3" class="hiddenRow">
+                    <div class="accordion-body collapse packageDetails4" id="accordion4">
+                        <table>
+                            <tr>
+                                <div id="idComponente4"> </div>
+
+
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            <tr id="package5" class="accordion-toggle" data-toggle="collapse" data-parent="#OrderPackages" data-target=".packageDetails5">
+                <th onclick="mostrar_proceso(5,'<?php echo $datoscomponente[4]['nombreComponente'];?>')" ><?php echo utf8_encode($datoscomponente[4]['nombreComponente']);?></th>
+
+                <th ></th>
+
+            </tr>
+            <tr>
+              <td colspan="3" class="hiddenRow">
+                  <div class="accordion-body collapse packageDetails5" id="accordion5">
+                      <table>
+                          <tr>
+                              <div id="idComponente5"> </div>
+
+
+                          </tr>
+                      </table>
+                  </div>
+              </td>
+          </tr>
+
+
+
+
+        </tbody>
+    </table>
+       <div id="idComponente"> </div>
+
+
+     </div>
+
+</div>
