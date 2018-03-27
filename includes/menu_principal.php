@@ -55,6 +55,20 @@ function validarPeriodo(){
          }
 
 }
+function validarPeriodoMinisterio(){
+
+    if( document.getElementById('comboPeriodo').value > 0 )
+        {
+           // alert('si has escogido una opcion')
+           location.href="../views/ministerioEducacion.php"
+
+
+        } else
+         {
+             alert('no has escogido un periodo')
+         }
+
+}
 </script>
 
 
@@ -91,7 +105,7 @@ require("../util/config.php");
 	echo '
   <a><button class="btnprincipal" style="vertical-align:middle"  onclick="validarPeriodo()" ><span>SISTEMA DE CALIDAD GESTION ESCOLAR</span></button></a>
   <a href="../views/macroprocesos.php"><button class="btnprincipal" style="vertical-align:middle"><span>MACRO DE PROCESOS INSTITUCIONALES</span></button></a>
-  <a href="../views/ministerioEducacion.php"><button class="btnprincipal" style="vertical-align:middle"><span>AUTOEVALUACION MINISTERIO DE EDUCACION</span></button></a>
+  <a><button class="btnprincipal" style="vertical-align:middle"  onclick="validarPeriodoMinisterio()"><span>AUTOEVALUACION MINISTERIO DE EDUCACION</span></button></a>
   <center><a href="'.$path.'/logout.php"><button class="btnprincipal" style="vertical-align:middle"><span>CERRAR</span></button></a></center>
   ';
 ?>
