@@ -89,7 +89,7 @@ include(dirname(dirname(__FILE__))."/includes/headerMinisterio.php");
 <div id="principal">
 	  	<?php include(dirname(__FILE__)."/infoUsuario.php")?>
 	<div id="columnader">
-           <img src="<?php echo $path?>/img/Grafico.png" style="margin-top:35px;"/>
+           <img src="<?php echo $path?>/img/ministerioEducacion.png" style="margin-top:35px;"/>
 	</div>
 
 </div>
