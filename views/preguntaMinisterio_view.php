@@ -151,8 +151,8 @@ foreach ($datospregunta as $key => $value) {
         $tablaRespuestaMinisterio .="
             <div style='text-align: center; width: 100%'>
             <tr>
-                <td width='10%'> <input type='radio' id ='chk_respuesta'  name='chk_respuesta'  value='".$datos[$key]['idRespuestaME']."' ".$checked." ".$editar."></td>
-                <td>".utf8_encode($datos[$key]['descripcionRespuestaME'])."</td>
+                <td width='10%'> <input type='radio' id ='chk_respuesta'  name='chk_respuesta'  value='".$datospregunta[$key]['idRespuestaME']."' ".$checked." ".$editar."></td>
+                <td>".utf8_encode($datospregunta[$key]['descripcionRespuestaME'])."</td>
                 </td>
             </tr>
             </div>" ;
@@ -174,7 +174,7 @@ foreach ($datospregunta as $key => $value) {
             </tr>
         </thead>
         <tbody>
-            <?php echo $tablaPregunta?>
+            <?php echo $tablaPreguntaMinisterio?>
         </tbody>
     </table>
 <BR>
@@ -186,7 +186,7 @@ foreach ($datospregunta as $key => $value) {
              </tr>
         </thead>
         <tbody>
-            <?php echo $tablaRespuesta?>
+            <?php echo $tablaRespuestaMinisterio?>
         </tbody>
     </table>
 
